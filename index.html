@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arq Studio | Estudio de Arquitectura</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand logo" href="#inicio">
+          <span class="resaltado">ARQ</span>STUDIO
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Abrir menú">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN PRINCIPAL / HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-fondo">
+      <img src="img/hero.jpg" alt="Edificio moderno con fachada de vidrio" />
+    </div>
+    <div class="hero-oscurecedor"></div>
+    <div class="container hero-contenido">
+      <p class="hero-eyebrow">Estudio de Arquitectura</p>
+      <h1>Diseñamos espacios<br>que inspiran</h1>
+      <p>Transformamos ideas en estructuras que perduran, con funcionalidad, estética y sostenibilidad.</p>
+      <a href="#proyectos" class="btn-principal">Ver proyectos</a>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS — FLEXBOX -->
+  <section id="beneficios" class="seccion fondo-claro">
+    <div class="container">
+      <h2 class="titulo-seccion text-center">¿Por qué elegirnos?</h2>
+      <p class="subtitulo-seccion text-center">Más de 15 años construyendo espacios con identidad</p>
+
+      <!-- Sección con Flexbox -->
+      <div class="beneficios-flex">
+        <article class="beneficio-tarjeta">
+          <i class="bi bi-award"></i>
+          <h3>Excelencia en diseño</h3>
+          <p>Premiados por la Universidad de Arquitectos en 2027 por innovación y calidad constructiva.</p>
+        </article>
+        <article class="beneficio-tarjeta">
+          <i class="bi bi-leaf"></i>
+          <h3>Arquitectura sostenible</h3>
+          <p>Aplicamos criterios bioclimáticos y materiales de bajo impacto ambiental en cada proyecto.</p>
+        </article>
+        <article class="beneficio-tarjeta">
+          <i class="bi bi-people"></i>
+          <h3>Acompañamiento integral</h3>
+          <p>Te guiamos desde el anteproyecto hasta la entrega de obra con plazos cumplidos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS — CSS GRID -->
+  <section id="proyectos" class="seccion">
+    <div class="container">
+      <h2 class="titulo-seccion text-center">Proyectos destacados</h2>
+      <p class="subtitulo-seccion text-center">Una selección de nuestras obras más recientes</p>
+
+      <!-- Sección con CSS Grid -->
+      <div class="proyectos-grid">
+        <article class="proyecto-tarjeta">
+          <div class="proyecto-imagen">
+            <img src="img/casaHorizonte.jpg" alt="Casa Horizonte, vivienda minimalista en Santo Domingo" loading="lazy" />
+          </div>
+          <div class="proyecto-info">
+            <span class="etiqueta">Residencial</span>
+            <h3>Casa Horizonte</h3>
+            <p>Vivienda de 280 m² con diseño minimalista e integración al paisaje.</p>
+          </div>
+        </article>
+        <article class="proyecto-tarjeta">
+          <div class="proyecto-imagen">
+            <img src="img/torreLuminica.jpg" alt="Torre Lumina, edificio corporativo de 12 pisos" loading="lazy" />
+          </div>
+          <div class="proyecto-info">
+            <span class="etiqueta">Corporativo</span>
+            <h3>Torre Lumina</h3>
+            <p>Edificio de 12 pisos con certificación LEED.</p>
+          </div>
+        </article>
+        <article class="proyecto-tarjeta">
+          <div class="proyecto-imagen">
+            <img src="img/casaMadera.jpg" alt="Refugio Madera, cabaña de montaña en madera certificada" loading="lazy" />
+          </div>
+          <div class="proyecto-info">
+            <span class="etiqueta">Residencial</span>
+            <h3>Refugio Madera</h3>
+            <p>Cabaña en madera certificada integrada al entorno boscoso.</p>
+          </div>
+        </article>
+        <article class="proyecto-tarjeta">
+          <div class="proyecto-imagen">
+            <img src="img/galeria.jpg" alt="Galería Norte, centro comercial boutique con luz natural" loading="lazy" />
+          </div>
+          <div class="proyecto-info">
+            <span class="etiqueta">Comercial</span>
+            <h3>Galería Norte</h3>
+            <p>Centro boutique de 1.200 m² con materiales nobles y luz natural.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS — SECCIÓN INFORMATIVA -->
+  <section id="planos" class="seccion fondo-claro">
+    <div class="container">
+      <div class="info-layout">
+        <div class="info-imagen">
+          <img src="img/planos.jpg" alt="Arquitecto trabajando en planos técnicos sobre una mesa" />
+        </div>
+        <div class="info-texto">
+          <p style="font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:2px; color:#555; margin-bottom:8px;">Nuestro proceso</p>
+          <h2>Del plano a la realidad</h2>
+          <p>Escuchamos tus necesidades y usamos software BIM para modelar cada detalle antes de construir.</p>
+          <p>Eliminamos errores y optimizamos costos desde el diseño hasta la entrega final.</p>
+          <ul class="lista-check">
+            <li><i class="bi bi-check2-circle"></i> Anteproyecto y renders fotorrealistas</li>
+            <li><i class="bi bi-check2-circle"></i> Planos de arquitectura, estructura e instalaciones</li>
+            <li><i class="bi bi-check2-circle"></i> Expediente municipal y permisos</li>
+            <li><i class="bi bi-check2-circle"></i> Dirección y supervisión de obra</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS — Bootstrap Grid -->
+  <section id="servicios" class="seccion fondo-oscuro">
+    <div class="container">
+      <h2 class="titulo-seccion text-center text-white">Servicios</h2>
+      <p class="subtitulo-seccion text-center" style="color: #e8dcc8;">Soluciones para cada etapa de tu proyecto</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="servicio-tarjeta">
+            <i class="bi bi-house-door"></i>
+            <h4>Diseño residencial</h4>
+            <p>Viviendas y remodelaciones adaptadas a tu estilo de vida.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="servicio-tarjeta">
+            <i class="bi bi-building"></i>
+            <h4>Arquitectura corporativa</h4>
+            <p>Oficinas y edificios con identidad visual de marca.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="servicio-tarjeta">
+            <i class="bi bi-rulers"></i>
+            <h4>Consultoría técnica</h4>
+            <p>Asesoría en normativas y permisos de construcción.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="servicio-tarjeta">
+            <i class="bi bi-camera"></i>
+            <h4>Renders y visualización</h4>
+            <p>Imágenes fotorrealistas antes de construir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO PROFESIONAL -->
+  <section id="equipo" class="seccion">
+    <div class="container">
+      <h2 class="titulo-seccion text-center">Equipo profesional</h2>
+      <p class="subtitulo-seccion text-center">Las personas detrás de cada proyecto</p>
+      <div class="equipo-grid">
+        <article class="miembro-tarjeta">
+          <div class="miembro-foto">
+            <img src="img/equipo1.jpg" alt="Andrés Morales, director y arquitecto fundador" />
+          </div>
+          <div class="miembro-info">
+            <h4>Jhon Liscano</h4>
+            <span>Director & Arquitecto Fundador</span>
+            <p>20 años liderando proyectos residenciales y comerciales en Latinoamérica.</p>
+          </div>
+        </article>
+        <article class="miembro-tarjeta">
+          <div class="miembro-foto">
+            <img src="img/equipo2.jpg" alt="Lucía Paredes, arquitecta especialista en diseño urbano" />
+          </div>
+          <div class="miembro-info">
+            <h4>Lucía Paredes</h4>
+            <span>Arquitecta — Diseño Urbano</span>
+            <p>Especialista en espacios públicos, movilidad sostenible y regeneración urbana.</p>
+          </div>
+        </article>
+        <article class="miembro-tarjeta">
+          <div class="miembro-foto">
+            <img src="img/equipo3.jpg" alt="Felipe Castro, ingeniero estructural del estudio" />
+          </div>
+          <div class="miembro-info">
+            <h4>Anderson Carbo</h4>
+            <span>Ingeniero Estructural</span>
+            <p>Garantiza seguridad y eficiencia en cada obra. En el estudio desde 2015.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LLAMADA A LA ACCIÓN -->
+  <section class="seccion fondo-oscuro text-center seccion-cta">
+    <div class="container">
+      <h2>¿Tienes un proyecto en mente?</h2>
+      <p>Cuéntanos tu idea y nuestro equipo la convertirá en realidad.</p>
+      <a href="#contacto" class="btn-blanco">Hablemos hoy</a>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section id="contacto" class="seccion fondo-claro">
+    <div class="container">
+      <div class="contacto-layout">
+
+        <div class="contacto-info">
+          <p style="font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:2px; color:#555; margin-bottom:8px;">Contacto</p>
+          <h2>Conversemos sobre tu proyecto</h2>
+          <p>Respondemos en menos de 24 horas hábiles.</p>
+          <address class="contacto-datos">
+            <p><i class="bi bi-geo-alt"></i> Av. AbramCalazacon, Edificio P — Santo Domingo, Ecuador</p>
+            <p><i class="bi bi-telephone"></i> +593 99999999</p>
+            <p><i class="bi bi-envelope"></i> hola@arqstudio.com</p>
+            <p><i class="bi bi-clock"></i> Lun–Vie, 9:00–18:00</p>
+          </address>
+        </div>
+
+        <form class="formulario-contacto" novalidate>
+          <div class="grupo-campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Jhon Liscano" required />
+          </div>
+          <div class="grupo-campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+          </div>
+          <div class="grupo-campo">
+            <label for="tipo">Tipo de proyecto</label>
+            <select id="tipo" name="tipo" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="residencial">Residencial</option>
+              <option value="corporativo">Corporativo</option>
+              <option value="comercial">Comercial</option>
+              <option value="consultoria">Consultoría técnica</option>
+            </select>
+          </div>
+          <div class="grupo-campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar mensaje <i class="bi bi-send"></i></button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columnas">
+
+        <div>
+          <p class="footer-logo"><span>ARQ</span>STUDIO</p>
+          <p class="footer-tagline">Diseñamos espacios que inspiran.</p>
+          <div class="footer-redes">
+            <a href="#" aria-label="Instagram de ARQ Studio"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn de ARQ Studio"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer-nav">
+          <h5>Navegación</h5>
+          <ul>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contacto">
+          <h5>Estudio</h5>
+          <p>Santo Domingo, Ecuador</p>
+          <p>+593 99999999</p>
+          <p>hola@arqstudio.com</p>
+        </div>
+
+      </div>
+
+      <div class="footer-inferior">
+        <p>&copy; 2026 ARQ Studio. Todos los derechos reservados.</p>
+        <p>Diseñado en mi casa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
